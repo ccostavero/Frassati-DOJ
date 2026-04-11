@@ -1,1 +1,334 @@
-# Frassati-DOJ
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Frassati Department of Justice | Valdellon Files</title>\
+    <style>\
+        /* --- CSS STYLING --- */\
+        body \{\
+            font-family: 'Source Sans Pro', Arial, sans-serif;\
+            line-height: 1.6;\
+            color: #333;\
+            margin: 0;\
+            background-color: #f4f4f4;\
+        \}\
+\
+        .container \{\
+            max-width: 1100px;\
+            margin: 0 auto;\
+            padding: 0 20px;\
+        \}\
+\
+        .gov-banner \{\
+            background: #f0f0f0;\
+            font-size: 0.75rem;\
+            padding: 5px 0;\
+            border-bottom: 1px solid #ccc;\
+            text-align: center;\
+            color: #555;\
+        \}\
+\
+        header \{\
+            background-color: #003366;\
+            color: white;\
+            padding: 1.5rem 0;\
+        \}\
+\
+        .header-flex \{\
+            display: flex;\
+            justify-content: space-between;\
+            align-items: center;\
+        \}\
+\
+        .logo-area \{\
+            display: flex;\
+            align-items: center;\
+        \}\
+\
+        .seal \{\
+            height: 70px;\
+            margin-right: 15px;\
+            border-radius: 50%;\
+            border: 2px solid #ceaa5d;\
+        \}\
+\
+        .agency-name h1 \{\
+            margin: 0;\
+            font-size: 1.4rem;\
+            letter-spacing: 1px;\
+            text-transform: uppercase;\
+        \}\
+\
+        .agency-name p \{\
+            margin: 0;\
+            font-size: 0.8rem;\
+            color: #bdc3c7;\
+        \}\
+\
+        nav ul \{\
+            list-style: none;\
+            display: flex;\
+            gap: 20px;\
+            margin: 0;\
+            padding: 0;\
+        \}\
+\
+        nav a \{\
+            color: white;\
+            text-decoration: none;\
+            font-weight: bold;\
+            font-size: 0.9rem;\
+            cursor: pointer;\
+        \}\
+\
+        nav a:hover, nav a.active \{\
+            border-bottom: 3px solid #ceaa5d;\
+        \}\
+\
+        .page-wrapper \{\
+            background: white;\
+            padding: 40px;\
+            min-height: 600px;\
+            margin-top: 20px;\
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);\
+        \}\
+\
+        .content-grid \{\
+            display: flex;\
+            gap: 40px;\
+        \}\
+\
+        main \{ flex: 3; \}\
+        aside \{ flex: 1; \}\
+\
+        .page-section \{ display: none; \}\
+        .page-section.active \{ display: block; \}\
+\
+        h2 \{ color: #003366; border-bottom: 2px solid #f4f4f4; padding-bottom: 10px; \}\
+\
+        .resource-card \{\
+            background: #f9f9f9;\
+            border: 1px solid #ddd;\
+            padding: 15px;\
+            margin-bottom: 15px;\
+            border-left: 5px solid #003366;\
+        \}\
+\
+        /* Council Grid Styling */\
+        .council-grid \{\
+            display: grid;\
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\
+            gap: 15px;\
+            margin-top: 20px;\
+        \}\
+\
+        .council-member \{\
+            background: #fff;\
+            border: 1px solid #eee;\
+            padding: 15px;\
+            text-align: center;\
+            border-top: 3px solid #003366;\
+        \}\
+\
+        .council-member h4 \{ margin: 5px 0; color: #003366; \}\
+        .council-member .pos \{ font-size: 0.8rem; font-weight: bold; color: #ceaa5d; text-transform: uppercase; \}\
+\
+        .vacant \{ border-top: 3px solid #ccc; border-style: dashed; opacity: 0.6; \}\
+\
+        #nameSearch \{\
+            width: 100%;\
+            padding: 10px;\
+            margin: 10px 0 20px 0;\
+            border: 1px solid #ccc;\
+        \}\
+\
+        .records-list \{ list-style: none; padding: 0; \}\
+        .records-list li \{ padding: 10px; border-bottom: 1px solid #eee; \}\
+\
+        /* Staff Profiles */\
+        .staff-profile \{\
+            display: flex;\
+            gap: 20px;\
+            margin-bottom: 40px;\
+            padding-bottom: 20px;\
+            border-bottom: 1px solid #eee;\
+        \}\
+        .staff-image img \{ width: 150px; height: 150px; object-fit: cover; border: 1px solid #ddd; \}\
+        .staff-title \{ font-style: italic; color: #666; border-bottom: 2px solid #ceaa5d; display: inline-block; \}\
+\
+        footer \{\
+            background: #212121;\
+            color: #999;\
+            text-align: center;\
+            padding: 40px 0;\
+            margin-top: 40px;\
+            font-size: 0.8rem;\
+        \}\
+        footer b \{ color: #ccc; \}\
+\
+        @media (max-width: 768px) \{\
+            .content-grid, .header-flex \{ flex-direction: column; text-align: center; \}\
+            .staff-profile \{ flex-direction: column; align-items: center; \}\
+        \}\
+    </style>\
+</head>\
+<body>\
+\
+    <div class="gov-banner">An official website of the Frassati Department of Justice</div>\
+\
+    <header>\
+        <div class="container header-flex">\
+            <div class="logo-area">\
+                <img src="https://lh3.googleusercontent.com/u/0/d/1zzlrPVK_cJoauBZ2J-cVkNB_YgQ1KuHh" alt="Seal" class="seal">\
+                <div class="agency-name">\
+                    <h1>Department of Justice</h1>\
+                    <p>Frassati Department of Justice</p>\
+                </div>\
+            </div>\
+            <nav>\
+                <ul>\
+                    <li><a onclick="showPage('home')" id="link-home" class="active">Home</a></li>\
+                    <li><a onclick="showPage('about')" id="link-about">About</a></li>\
+                    <li><a onclick="showPage('agencies')" id="link-agencies">Agencies</a></li>\
+                    <li><a onclick="showPage('Search')" id="link-search">Search</a></li>\
+                </ul>\
+            </nav>\
+        </div>\
+    </header>\
+\
+    <div class="container page-wrapper">\
+        <div class="content-grid">\
+            <main>\
+                <section id="home" class="page-section active">\
+                    <h2>Current Case Information</h2>\
+                    <p>Welcome to the central repository for the Frassati Department of Justice. We assure you that we comply with the Valdellon Files Transparency Act of 2026.</p>\
+                    \
+                    <div class="resource-card">\
+                        <span style="color: #666; font-size: 0.8rem; font-weight: bold;">PRESS RELEASE | APRIL 2026</span>\
+                        <h3>President Valdellon takes temporary leave of absence</h3>\
+                        <p>Official Statement released by Executive Secretary Sadako Sablan regarding the 2025 inquiry.</p>\
+                        <a href="https://docs.google.com/document/d/1BkbkOsu5B-dr02ZQ90MoeC2qAm1l8JQDaCgFsPI87s8/edit?usp=drive_link" target="_blank">Read Press Release 
+\f1 \uc0\u8594 
+\f0 </a>\
+                    </div>\
+\
+                    <div class="resource-card">\
+                        <span style="color: #666; font-size: 0.8rem; font-weight: bold;">UPDATE | MARCH 2026</span>\
+                        <h3>Slow Disclosure of the Valdellon Files</h3>\
+                        <p>The Department has released the first 5 redacted transcripts for public review.</p>\
+                        <a href="https://drive.google.com/file/d/1t4keaaPkGTw-VD9cpV4-cnFAJw9Xy3zO/view?usp=sharing" target="_blank">Read Transcripts 
+\f1 \uc0\u8594 
+\f0 </a>\
+                    </div>\
+                </section>\
+\
+                <section id="about" class="page-section">\
+                    <h2>Department Leadership</h2>\
+                    <div class="staff-profile">\
+                        <div class="staff-image"><img src="https://lh3.googleusercontent.com/u/0/d/1IXrZGDxQ9GMv4UDogPu5ZVm4LpTrAliz" alt="Nishimori"></div>\
+                        <div class="staff-info">\
+                            <h3 class="staff-name">Amaya Nishimori</h3>\
+                            <p class="staff-title">Head of the Frassati Department of Justice</p>\
+                            <p class="staff-bio">Nishimori spearheaded the Valdellon Files Transparency Act to ensure public access to critical case resources.</p>\
+                        </div>\
+                    </div>\
+\
+                    <div class="staff-profile">\
+                        <div class="staff-image"><img src="https://lh3.googleusercontent.com/u/0/d/1hq7cumjDE3lClXVDBMVdnagPPZSCD133" alt="Sartorio"></div>\
+                        <div class="staff-info">\
+                            <h3 class="staff-name">Isaiah Sartorio</h3>\
+                            <p class="staff-title">Senator and Co-Head of Investigation</p>\
+                            <p class="staff-bio">Ensures the integrity of visual and verbal evidence within the Transparency Act files.</p>\
+                        </div>\
+                    </div>\
+                </section>\
+\
+                <section id="agencies" class="page-section">\
+                    <h2>2025-2026 Class Council Panel</h2>\
+                    <div class="council-grid">\
+                        <div class="council-member"><h4>Miguel Valdellon</h4><p class="pos">President</p></div>\
+                        <div class="council-member"><h4>Eidrian Baleva</h4><p class="pos">Vice President</p></div>\
+                        <div class="council-member"><h4>Sadako Sablan</h4><p class="pos">Secretary</p></div>\
+                        <div class="council-member"><h4>Yeoj Cabingue</h4><p class="pos">Treasurer</p></div>\
+                        <div class="council-member"><h4>Jio Quijano</h4><p class="pos">P.R.O</p></div>\
+                        <div class="council-member"><h4>Isaiah Sartorio</h4><p class="pos">First Senator</p></div>\
+                    </div>\
+\
+                    <h2 style="margin-top: 40px; color: #777;">2026-2027 Council Panel (Vacant)</h2>\
+                    <div class="council-grid">\
+                        <div class="council-member vacant"><h4>Vacant</h4><p class="pos">President</p></div>\
+                        <div class="council-member vacant"><h4>Vacant</h4><p class="pos">Vice President</p></div>\
+                        <div class="council-member vacant"><h4>Vacant</h4><p class="pos">Secretary</p></div>\
+                        <div class="council-member vacant"><h4>Vacant</h4><p class="pos">Treasurer</p></div>\
+                        <div class="council-member vacant"><h4>Vacant</h4><p class="pos">PRO</p></div>\
+                        <div class="council-member vacant"><h4>Vacant</h4><p class="pos">Senator</p></div>\
+                    </div>\
+                </section>\
+\
+                <section id="Search" class="page-section">\
+                    <h2>Public Resources</h2>\
+                    <input type="text" id="nameSearch" onkeyup="filterNames()" placeholder="Search names (e.g. 'Valdellon')...">\
+                    <ul class="records-list" id="recordsList">\
+                        <li><a href="https://drive.google.com/file/d/1t4keaaPkGTw-VD9cpV4-cnFAJw9Xy3zO/view?usp=sharing" target="_blank"><strong>Valdellon Files:</strong> Redacted Message Transcripts</a></li>\
+                        <li><a href="#"><strong>Legal Notice:</strong> The Orchard Injunction Final Ruling</a></li>\
+                        <li><a href="#"><strong>The Banana Peel Mandate</strong> - Active</a></li>\
+                    </ul>\
+                </section>\
+            </main>\
+\
+            <aside>\
+                <div class="resource-card" style="border-left: 2px solid #ceaa5d;">\
+                    <h4>Quick Links</h4>\
+                    <p style="font-size: 0.85rem;">\
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYZHFz7zAxWEH1hc7f9YaH9ck3YyTOmtRB0Fsv9Mt2cURCSA/viewform" target="_blank" style="color: #d14124; font-weight: bold;">Missing Information? Send a request 
+\f1 \uc0\u8594 
+\f0 </a>\
+                    </p>\
+                </div>\
+                <div style="font-size: 0.75rem; color: #777;">\
+                    <b>Contact:</b><br>Main Justice Building<br>27th Frassati, 4th Floor\
+                </div>\
+            </aside>\
+        </div>\
+    </div>\
+\
+    <footer>\
+        <div class="container">\
+            <p><b>Frassati Department of Justice</b></p>\
+            <p><i>iniustitia praeponderat bonis</i></p>\
+            <p>\'a9 2026. All Rights Reserved.</p>\
+        </div>\
+    </footer>\
+\
+    <script>\
+        function showPage(pageId) \{\
+            const sections = document.querySelectorAll('.page-section');\
+            sections.forEach(s => s.classList.remove('active'));\
+            document.getElementById(pageId).classList.add('active');\
+\
+            const links = document.querySelectorAll('nav a');\
+            links.forEach(l => l.classList.remove('active'));\
+            document.getElementById('link-' + pageId).classList.add('active');\
+        \}\
+\
+        function filterNames() \{\
+            let input = document.getElementById('nameSearch');\
+            let filter = input.value.toUpperCase();\
+            let ul = document.getElementById("recordsList");\
+            let li = ul.getElementsByTagName('li');\
+            for (let i = 0; i < li.length; i++) \{\
+                let txtValue = li[i].textContent || li[i].innerText;\
+                li[i].style.display = txtValue.toUpperCase().indexOf(filter) > -1 ? "" : "none";\
+            \}\
+        \}\
+    </script>\
+</body>\
+</html>}
