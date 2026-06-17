@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -235,7 +236,22 @@
             gap: 15px;
             margin-top: 20px;
         }
+.wanted-photo {
+            width: 100%;
+            height: 140px;
+            background: #ddd;
+            border: 1px dashed #555;
+            display: block; /* Changed from flex to block */
+            margin-bottom: 8px;
+            overflow: hidden;
+        }
 
+        /* Add this new rule right below it to force the image to fit perfectly */
+        .wanted-photo img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
+        }
         .wanted-card {
             border: 2px solid #222;
             background: #fffdf2;
@@ -260,19 +276,6 @@
             text-transform: uppercase;
         }
 
-        .wanted-photo {
-            width: 100%;
-            height: 140px;
-            background: #ddd;
-            border: 1px dashed #555;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.5rem;
-            color: #777;
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
 
         .wanted-card h4 {
             margin: 5px 0 2px 0;
@@ -317,6 +320,7 @@
         <div class="container header-flex">
             <div class="logo-area">
                 <img src="https://lh3.googleusercontent.com/u/0/d/1zzlrPVK_cJoauBZ2J-cVkNB_YgQ1KuHh" alt="Seal" class="seal">
+              
                 <div class="agency-name">
                     <h1>Department of Justice</h1>
                     <p>Frassati Department of Justice</p>
@@ -363,7 +367,10 @@
                         <!-- FUGITIVE 1 -->
                         <div class="wanted-card">
                             <div class="wanted-header">Wanted</div>
-                            <div class="wanted-photo">?</div>
+                            <div class="wanted-photo">
+                                <img src="https://lh3.googleusercontent.com/u/0/d/1fh5rD-McGO2pIAxKmTACTOq_VBWQXzET" alt="Isaiah Sartorio" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                 
                             <h4>Isaiah Sartorio</h4>
                             <div class="wanted-charge">
                                 <b>OFFENSE:</b> Committing multiple offenses against the rights of 12 individuals.
@@ -373,7 +380,9 @@
                         <!-- FUGITIVE 2 -->
                         <div class="wanted-card">
                             <div class="wanted-header">Wanted</div>
-                            <div class="wanted-photo">?</div>
+                            <div class="wanted-photo">
+                                <img src="https://lh3.googleusercontent.com/u/0/d/1mY6Akem2XIhZ5P2fJ3Mc9vUGTfs9rieM" alt="Valdellon" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
                             <h4>Miguel Valdellon</h4>
                             <div class="wanted-charge">
                                 <b>OFFENSE:</b> In a mentally unstable position after SIP and Pamanahong Papel. Must be held responsible for all crimes to his fellow classmates and be admitted to the psych ward immediately.
@@ -383,7 +392,9 @@
                         <!-- FUGITIVE 3 -->
                         <div class="wanted-card">
                             <div class="wanted-header">Wanted</div>
-                            <div class="wanted-photo">?</div>
+                            <div class="wanted-photo">
+                                <img src="https://lh3.googleusercontent.com/u/0/d/1JZYvE5o4G3Y-fdqgVAH1rCxUrBO9PdBf" alt="Yeoj Cabingue" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
                             <h4>Yeoj Cabingue</h4>
                             <div class="wanted-charge">
                                 <b>OFFENSE:</b> Reportedly seen joining the Cartel and seen in a gambling business, trafficking, and selling of material. Currently unstable for the responsibility of a father, Mateo and Audrey must be rescued immediately.
@@ -393,7 +404,9 @@
                         <!-- FUGITIVE 4 -->
                         <div class="wanted-card">
                             <div class="wanted-header">Wanted</div>
-                            <div class="wanted-photo">?</div>
+                            <div class="wanted-photo">
+                                <img src="https://lh3.googleusercontent.com/d/1dqgohlb_Ug3Vlq4tiqD3zOLc5NOlFBFH" alt="Eidrian Baleva" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
                             <h4>Eidrian Baleva</h4>
                             <div class="wanted-charge">
                                 <b>OFFENSE:</b> Seen in multiple trysts with former senator Isaiah Sartorio and engaged in multiple offensive activities.
@@ -530,3 +543,5 @@
     </script>
 </body>
 </html>
+
+```
